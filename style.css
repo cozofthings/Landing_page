@@ -1,5 +1,6 @@
 body {
     display: flex;
+    font-family: sans-serif;
     flex-direction: column;
     margin: 0;
     min-height: 100vh;
@@ -8,7 +9,6 @@ body {
 
 .header {
     display: flex;
-    font-family: sans-serif;
     align-items: center;
     padding: 0px 200px;
     color: white;
@@ -17,6 +17,7 @@ body {
 } 
 
 .header-left {
+    width: 200px;
     font-size: 24px;
 }
 
@@ -34,15 +35,50 @@ li {
 }
 
 .welcome {
+    display: flex;
+    justify-content: center;
+    align-content: center;
     flex: 3;
     background-color: #064273;
     padding: 0px 200px;
 }
 
+.welcome-left { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.welcomeblurb {
+    color: #E5E7EB;
+}
+
+.welcomebutton { 
+    column-gap: 30px;
+    background-color: royalblue;
+    color: white;
+    font-size: 20px;
+    gap: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 35%;
+}
+.bigwelcome {
+    padding-top: 80px;
+    width: 500px;
+    color: white;
+    font-size: 55px;
+}
+
+.welcome-right img {
+    padding: 80px;
+    padding-left: 0px;
+}
+
 .information {
     display: flex;
     flex-direction: column;
-    font-size: 20px;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
@@ -51,21 +87,32 @@ li {
     padding: 0px 200px;
 }
 
+.top {
+    font-size: 30px;
+    color: #002541;
+    padding: 15px;
+    font-weight: bold;
+}
+
 .images {
     display: flex;
-    padding: 45px;
-    gap: 50px;
+    padding: 10px;
+    gap: 100px;
 }
 
 .image {
     display: flex;
     max-width: 200px;
+    color: #002541;
+    gap: 8px;
     flex-direction: column;
     text-align: center;
+    font-size: 15px;
     flex-wrap: wrap;
+
 }
 
-img {
+.image img {
     border: #3882F2;
     border-style: solid;
     border-radius: 10px;
@@ -77,15 +124,36 @@ img {
 }
 
 .quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #76b6c4;
     flex: 1;
-    padding: 0px 200px;
+    padding: 100px 200px;
+}
+
+.mobydick {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 900px;
+    color: #002541;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.authorname {
+    text-align: end;
+    font-size: 20px;
+    color: #002541;
+    font-style: normal;
+    font-weight: bold;
 }
 
 .cta-container {
     display: flex;
-    background-color: #def3f6;
-    padding: 0px 200px;
+    background-color: #E5E7EB;
+    padding: 100px 200px;
     align-items: center;
     justify-content: center;
     flex: 1;
@@ -94,19 +162,42 @@ img {
 .cta0 {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 15px 100px;
     height: 100px;
     flex-basis: 60%;
     border-radius: 5px;
     background-color:#3882F2;
+}
 
+.cta-left {
+    color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.bottomtext {
+    font-size: 15px;
+    font-weight: normal;
+
+}
+
+.sign-up {
+    background-color: #E5E7EB;
+    border-radius: 15px;
+    color: #002541;
+    flex-basis: 20%;
+    padding: 15px 25px;
+    font-size: 15px;
 }
 
 .footer { 
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 200px;
+    padding: 20px 200px;
     color: white;
     background-color:#064273;
 }
